@@ -1,6 +1,6 @@
 <h1>Todo list</h1>
 <a href="#/todo/new" class="btn btn-info pull-right">Add a task!</a>
-<table class="table table-striped" ng-if="model.todosch">
+<table class="table table-striped" ng-if="model.todos">
     <thead>
         <tr>
             <th ng-repeat="(key, val) in model.todos[0]">{{key | uppercase}}</th>
