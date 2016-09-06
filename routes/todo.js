@@ -7,14 +7,10 @@ var mysql = require('mysql');
 
 var connection = mysql.createPool({
     connectionLimit: 10,
-    host: "sql3.freemysqlhosting.net",
-    user: "sql3134550",
-    password: "UtZlnZ3gI5",
-    database: "sql3134550"
-    //host: 'localhost',
-    //user: 'testuser',
-    //password: 'testuser',
-    //database: 'todo'
+    host: 'localhost',
+    user: 'testuser',
+    password: 'testuser',
+    database: 'todo'
 });
 
 router.get('/todo', function(req, res) {
