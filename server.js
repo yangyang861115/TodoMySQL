@@ -15,8 +15,8 @@ app.use(express.static(__dirname + '/public'));
 var todoRoutes    = require("./routes/todo");
 app.use(todoRoutes);
 
-var ipaddress = '127.0.0.1' || process.env.IP;
-var port      =  3000 || process.env.PORT;
+var ipaddress =  process.env.IP || '127.0.0.1';
+var port      =  process.env.PORT || 3000;
 
 app.listen(port, ipaddress, function(){
     console.log("Server is running on localhost:3000.");
