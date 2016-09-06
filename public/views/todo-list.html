@@ -1,0 +1,19 @@
+<h1>Todo list</h1>
+<a href="#/todo/new" class="btn btn-info pull-right">Add a task!</a>
+<table class="table table-striped" ng-if="model.todosch">
+    <thead>
+        <tr>
+            <th ng-repeat="(key, val) in model.todos[0]">{{key | uppercase}}</th>
+            <th>ACTION</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="row in model.todos">
+            <td ng-repeat="val in row">{{val}}</td>
+            <td>
+                <a href="#/todo/{{row.id}}" class="btn btn-warning btn-sm">Edit</a>
+                <a href="" ng-click="model.deleteTodoById(row.id)" class="btn btn-danger btn-sm">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

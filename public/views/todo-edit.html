@@ -1,0 +1,15 @@
+<a href="#/todo" class="btn btn-info pull-right">View All Todos!</a>
+<h1>Edit</h1>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <form class="form-inline" id="newTaskFm">
+            <div class="form-group">
+                <lable for="task">Task: </lable>
+                <input type="text" id="task" ng-model="model.todo.task" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary" ng-click="model.updateTodo(model.todo)">Update</button>
+            <a href="#/todo/" class="btn btn-success">Cancel</a>
+        </form>
+    </div>
+</div>
